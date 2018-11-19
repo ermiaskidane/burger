@@ -93,7 +93,7 @@ class BurgerBuilder extends Component {
       <React.Fragment>
         {/* <div>Burger</div> */}
         <Burger ingredients={this.state.ingredients} />
-        <Model>
+        <Model show={this.state.purchasing}>
           <OrderSummery ingredients={this.state.ingredients} />
         </Model>
         <BuildControls
